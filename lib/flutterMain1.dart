@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() =>
-    runApp(MaterialApp(
+    runApp(const MaterialApp(
         home: Home()
     ));
 
@@ -19,15 +19,8 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.amber,
       ),
       body: const Center(
-        child: Text('Hello anurag',
-          style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2.0,
-              color: Colors.grey,
-              fontFamily: 'TheNautigal'
-          ),
-        ),
+        child: Image(
+            image: AssetImage('assets/image1.png')),
       ),
       floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.amber,
