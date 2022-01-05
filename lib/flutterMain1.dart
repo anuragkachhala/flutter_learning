@@ -18,15 +18,16 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.amber,
       ),
-      body: const Center(
-        child: Text('Hello anurag',
-          style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2.0,
-              color: Colors.grey,
-              fontFamily: 'TheNautigal'
-          ),
+      body:  Center(
+        /*child: Icon(
+          Icons.airport_shuttle,
+          color: Colors.blue,
+          size: 50.0,
+        ),*/
+        child: IconButton(
+          icon: const Icon(Icons.alternate_email),
+          color: Colors.amber,
+          onPressed: () {},
         ),
       ),
       floatingActionButton: FloatingActionButton(
