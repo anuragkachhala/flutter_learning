@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'Quote.dart';
+import 'QuoteCardWidget.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -23,28 +24,7 @@ class _QuoteListState extends State<QuoteListApp> {
   ];
 
   Widget quoteWidget(quote) {
-    return Card(
-      margin: EdgeInsets.all(16.0),
-      child: Padding(
-        padding: const EdgeInsets.all(12.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            Text(
-              quote.quote,
-              style: TextStyle(fontSize: 18.0, color: Colors.grey[600]),
-            ),
-            SizedBox(
-              height: 10.0,
-            ),
-            Text(
-              quote.author,
-              style: TextStyle(fontSize: 14.0, color: Colors.grey[400]),
-            )
-          ],
-        ),
-      ),
-    );
+    return QuoteCardWidget(quote);
   }
 
   @override
@@ -63,3 +43,5 @@ class _QuoteListState extends State<QuoteListApp> {
     );
   }
 }
+
+
